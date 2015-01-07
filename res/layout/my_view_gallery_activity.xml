@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="45dp">
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="照片"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/bt_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="5"
+            android:layout_height="0px">
+
+        <ImageView
+                android:id="@+id/iv_image"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+        <com.example.androidimagefilterdemo.RectView
+                android:id="@+id/rect_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+    </FrameLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+        <HorizontalScrollView
+                android:id="@+id/gallery"
+                android:layout_width="fill_parent"
+                android:scrollbars="none"
+                android:layout_height="fill_parent">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="fill_parent">
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_average_blue_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/average_blue_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_block_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/block_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_gaussian_blur_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/gaussian_blur_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_gotham_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/gotham_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_gray_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/gray_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_hdr_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/hdr_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_invert_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/invert_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_light_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/light_style"
+                        android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_lomo_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/lomo_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_motion_blur_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/motion_blur_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_neon_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/neon_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_oil_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/oil_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_old_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/old_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_pixelate_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/pixelate_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_relief_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/relief_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_sharpen_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/sharpen_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_sketch_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/sketch_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_soft_glow_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/soft_glow_style"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:scaleType="center"
+                        android:id="@+id/iv_tv_style"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/tv_style"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp">
+
+        <Button
+                android:id="@+id/bt_choose_mosaic"
+                android:text="选择马赛克区域"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/bt_confirm_mosaic"
+                android:text="确定区域"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/bt_cancel_mosaic"
+                android:layout_width="wrap_content"
+                android:text="取消区域"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
